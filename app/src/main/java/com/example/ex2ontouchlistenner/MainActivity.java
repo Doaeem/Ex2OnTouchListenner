@@ -87,7 +87,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
         e1.setText(stgs.get(position).getNom());
         e2.setText(stgs.get(position).getPrenom());
-        if (stgs.get(position).getSexe().equals("H"))
+        if (stgs.get(position).getSexe().equals("Homme"))
             grp.check(R.id.rdh);
         else
             grp.check(R.id.rdf);
