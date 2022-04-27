@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#EFC8D5"
+    tools:context=".MainActivity">
+
+    <TextView
+        style="@style/TextViewStyle"
+        android:text="Liste des stagiaires"
+        android:gravity="center"
+        android:layout_gravity="center"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            style="@style/TextViewStyle"
+            android:layout_margin="10dp"
+            android:text="Nom  : "
+            android:textStyle="bold"
+            android:textSize="30sp" />
+
+        <EditText
+            android:id="@+id/idnom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:enabled="false"
+            android:textSize="30sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            style="@style/TextViewStyle"
+            android:layout_margin="10dp"
+            android:text="Prenom  : "
+            android:textStyle="bold"
+            android:textSize="30sp" />
+
+        <EditText
+            android:id="@+id/idprenom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:enabled="false"
+            android:textSize="30sp" />
+    </LinearLayout>
+
+    <TextView
+        style="@style/TextViewStyle"
+        android:layout_margin="10dp"
+        android:textStyle="bold"
+        android:text="Sexe  : "
+        android:textSize="30sp" />
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/grp">
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Homme"
+            android:id="@+id/rdh"
+            android:textSize="30sp" />
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:id="@+id/rdf"
+            android:text="Femme"
+            android:textSize="30sp" />
+    </RadioGroup>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:id="@+id/im"
+        android:src="@drawable/image2"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            style="@style/ButtonStyle"
+            android:text="&lt;&lt;"
+            android:layout_weight="1"
+            android:layout_margin="2dp"
+            android:id="@+id/idfirst"
+            android:textSize="30sp"
+            android:textStyle="bold"/>
+
+        <Button
+            style="@style/ButtonStyle"
+            android:text="&lt;"
+            android:layout_margin="2dp"
+            android:layout_weight="1"
+            android:id="@+id/idprec"
+            android:textSize="30sp"
+            android:textStyle="bold"/>
+
+        <Button
+            style="@style/ButtonStyle"
+            android:id="@+id/idnext"
+            android:layout_margin="2dp"
+            android:layout_weight="1"
+            android:text=">"
+            android:textSize="30sp"
+            android:textStyle="bold"/>
+
+        <Button
+            style="@style/ButtonStyle"
+            android:id="@+id/idlast"
+            android:layout_margin="2dp"
+            android:layout_weight="1"
+            android:text=">>"
+            android:textSize="30sp"
+            android:textStyle="bold"/>
+
+    </LinearLayout>
+
+</LinearLayout>
